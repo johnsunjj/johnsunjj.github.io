@@ -1,0 +1,658 @@
+.container
+{
+    background-color: #fbfbfb;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+    -webkit-transition: all 0.75s ease-in-out;
+    -o-transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+    left: 0px;
+  -webkit-transform: translateZ(100px);
+    transform: translateZ(100px);
+}
+
+#single-article .same-height, #single-joueur .same-height{display: inline-block!important; 
+       vertical-align: middle;height: 5px;padding: 2px 0px;}
+.same-height{display: none;}
+
+body#single-article header .selected-none .nav-fcnantes,
+body#single-article header .nav-other,
+body#single-joueur header .selected-none .nav-fcnantes,
+body#single-joueur header .nav-other {
+    display: none;
+}
+
+
+header.sticky
+{
+    background-color: #d4b800;
+    padding: 1px;
+   
+}
+
+.navbar
+{
+    height: 100px;
+   padding-bottom: 5px;
+  
+}
+
+.navbar-brand
+{
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.3s color;
+    justify-content: center;
+    margin-left: 35%;
+}
+.navbar-brand:hover{
+    color: #ffffff;
+}
+.login-button
+{
+   background-color: #fafafa;
+   color: #ffffff;
+   font-size: 14px;
+   font-weight: 600;
+   padding: 10px 30px;
+   border-radius: 50px;
+   text-decoration: none;
+   transform: 0.3s background-color;
+}
+.login-button:hover
+{
+    background-color: #00b383;
+
+}
+
+.navbar-toggler
+{
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus 
+{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link
+{
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover, .nav-link.active {
+    color: #ffffff;
+
+}
+
+@media (min-width:991px)
+{
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #d4b800;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before, .nav-link.active::before
+{
+        width: 100%;
+    visibility: visible;
+}
+}
+
+
+/*** Carousel Hero Header Start ***/
+
+.carousel-control-prev-icon
+{
+    background-color: #d4b800;
+}
+.carousel-control-next-icon
+{
+    background-color: #d4b800;
+}
+.carousel-header .carousel-control-prev .carousel-control-prev-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 25px 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 50px;
+    background-size: 60% 60%;
+}
+
+.carousel-header .carousel-control-next .carousel-control-next-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 25px 30px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 0;
+    background-size: 60% 60%;
+
+}
+
+.carousel-header .carousel .carousel-indicators li,
+.carousel-header .carousel .carousel-indicators li,
+.carousel-header .carousel .carousel-indicators li {
+    opacity: 0;
+}
+
+.carousel-header .carousel-inner .carousel-item {
+    position: relative;
+    min-height: 100vh 
+}
+
+.carousel-header .carousel-inner .carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-header .carousel-inner .carousel-item .carousel-caption  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .carousel-header .carousel-inner .carousel-item img,
+    .carousel-header .carousel-inner .carousel-item .carousel-caption {
+        height: 700px;
+        margin-top: -100px;
+    }
+
+    .carousel-header {
+        height: 700px !important;
+    }
+
+    .carousel-header .carousel-control-prev .carousel-control-prev-icon,
+    .carousel-header .carousel-control-next .carousel-control-next-icon {
+        opacity: 0;
+    }
+    
+    .search-bar {
+        margin-top: -100px;
+        transition: 0.5s;
+    }
+}
+/*** Carousel Hero Header End ***/
+.nextsection
+{
+    height: 1000px;
+    width: 100%;
+    background-color: #d4b800;
+}
+
+.enquiry button
+{
+    width: 200px;
+    height: 50px;
+    border-color:#d4b800;
+    background-color: rgba(255, 255, 255, 0.011);
+    color: #ffffff;
+    
+}
+.enquiry button:hover{
+    width: 200px;
+    height: 50px;
+    background-color:#d4b800;
+    color: #050000;
+}
+.icons img
+{
+    margin-left: 20px;
+}
+
+.home-news {
+    width: 86%;
+    margin: -2% auto;
+    position: relative;
+    z-index: 99;
+    font-size: 0px;
+    margin-bottom: 385px;
+}
+.box1
+{
+    background-image: url('../images/marine-supply1.jpg');
+    width: 94%;
+    height: 1000px;
+    margin: -5% auto;
+    position:relative;
+    background-size: cover;
+    background-position:50%;
+    
+}
+
+.secondbox
+{
+    width: 107%;
+    height: 1000px;
+    border:#d4b800 solid 10px;
+    position: relative;
+    top:-30px;
+    left: -60px;
+    overflow:visible;
+}
+.secondbox:hover 
+ {
+    top:0px;
+    left: -12px;
+    transition: 0.6s ease-in-out;
+}
+.box2
+{
+    background-color: #ffffff;
+    width: 100%;
+    height: 1000px;
+    margin: -5% auto;
+    position:relative;
+    z-index: 99;
+
+}
+.box3
+{
+    background-color: #ffffff;
+    width: 75%;
+    height: 1500px;
+    margin: -5% auto;
+    position:relative;
+    z-index: 99;
+    
+}
+.label
+{
+  border-bottom: #ffdd00 solid 2px;
+  padding: 5px;
+  width: 90%;
+  margin-left: 15px;
+}
+
+.label-icon
+{
+    width: 50px;
+    height: 100px;
+    background-color: #ffdd00;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+    
+}
+.label-icon h2
+{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 20%;
+    padding: 5px;
+}
+.label-icon p
+{
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 25%;
+}
+
+.label-content
+{
+    width: 200px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+   
+}
+.label-content h2
+{
+  font-size: 16px;
+  font-weight: 700;
+}
+.label-content p
+{
+  font-size: 14px;
+  
+}
+.label a
+{
+    color: #000000;
+}
+.label:hover
+{
+    left: 50px;
+    transform: translateX(10px);
+    transition: 0.3s ease-in-out;
+    
+}
+.content
+{
+    width: 200px;
+    height: 400px;
+    background-color: #ffffff;
+    position:absolute;
+    top: 500px;
+    left: 80px;
+    color: #000000;
+    padding: 20px;
+    
+}
+.content2
+{
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff; 
+    color: #000000; 
+    padding-top: 50%;
+}
+
+.ship1
+{
+    background-image: url('../images/marine-agency1.jpg');
+    width: 100%;
+    height: 500px; 
+    background-position:80%;
+}
+
+.content h2,.content2 h2 
+{
+   text-transform: uppercase;
+   font-size: 16px;
+   font-weight:700;
+}
+.content p,.content2 p, .content span, .content2 span
+{
+   text-transform: uppercase;
+   font-size: 14px;
+}
+.box2bg
+{
+    background-color: #2a2a29;
+    width: 95%;
+    height: 500px;
+    margin-left: 12px;
+
+   
+}
+.contentblock
+{
+    width: 45%;
+    height: 400px;
+    float: left;
+    position: relative;
+    right:-20px;
+    padding-top: 100px;
+}
+.contentblock span, .contentblock1 span
+{
+    color: #d4b800;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 1px;
+    text-align: left;
+}
+.contentblock h2, .contentblock1 h2
+{
+    color: #d4b800;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 5px;
+
+}
+.contentblock p, .contentblock1 p
+{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: left;
+    
+    display: flex;
+    
+}
+.contentpic
+{
+    width: 55%;
+    height: 400px;
+    background-image: url('../images/logistics1.jpg');
+  float: left;
+  position: relative;
+  right: -30px;
+  margin-top: 50px;
+  background-position:50%;
+  
+}
+.box2bg1
+{
+    background-color: #2a2a29;
+    width: 95%;
+    height: 500px;
+    margin-left: 12px;
+    margin-top: 40px;
+
+   
+}
+.contentpic1
+{
+    width: 55%;
+    height: 400px;
+    background-image: url('../images/ship-service1.jpg');
+  float: left;
+  position: relative;
+  left: -30px;
+  margin-top: 50px;
+  background-position:50%;
+  
+}
+.contentblock1
+{
+    width: 45%;
+    height: 400px;
+    float: left;
+    position: relative;
+    left:-20px;
+    padding-top: 100px;
+}
+.fire1
+{
+    background-image: url('../images/industry1.jpg');
+    width: 100%;
+    height: 500px; 
+    background-position:70%;
+}
+.box4
+{
+    background-color: #ffffff;
+    width: 100%;
+    height: 500px;
+    
+    position:relative;
+   margin-top: 40px;
+
+}
+.banner
+{
+    width: 100%;
+    height: 800px;
+    background-image: url(../images/saeed-al-malik.jpg);
+    margin-top: 50px;
+}
+.enquiry1 button
+{
+    width: 200px;
+    height: 50px;
+    border-color:#d4b800;
+    background-color: rgba(255, 255, 255, 0.011);
+    color: #ffffff;
+    
+}
+.enquiry1 button:hover{
+    width: 200px;
+    height: 50px;
+    background-color:#d4b800;
+    color: #050000;
+}
+.bannercontent
+{
+   color: #ffffff;
+   padding-top: 350px;
+   padding-left: 100px;
+}
+.bannercontent span{
+    color: #d4b800;
+}
+.brand
+{
+    width: 100%;
+    
+    background-color: #ffffff;
+    
+}
+.brand h2
+{
+    margin-top: 50px;
+    margin-left: 40%;
+}
+.line1
+{
+   
+    padding: 50px;
+    margin-left: 30px;
+}
+.line1 img{
+    margin-left: 30px;
+}
+.line2
+{
+   
+    padding-left: 50px;
+    margin-left: 30px;
+}
+.line2 img{
+    margin-left: 30px;
+}
+.line3
+{
+    margin-left: 45%;
+    padding-top: 30px;
+}
+.footer
+{
+    width: 100%;
+    background-color: #333;
+    margin-top: 20px;
+    padding: 70px 0;
+}
+ul{
+    list-style: none;
+}
+.table1 a
+{
+color: #979797;
+text-decoration: none;
+font-size: 15px;
+}
+.table1 li
+{
+   text-transform: uppercase;
+}
+.table1 span
+{
+    color: #ffffff;
+}
+.footer h2
+{
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 30px;
+}
+.footer p{
+    font-size: 14px;
+    color: #ffffff;
+    margin-left: 30px;
+}
+.footerend
+{
+    background-color: #1a1a1a;
+    width: 100%;
+   
+    padding-top: 50px;
+}
+.footerend h2
+{
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 30px;
+}
+.footerend p{
+    font-size: 14px;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.footerend li{
+    margin-top: 10px;
+}
+.iso img{
+    margin-top: 10px;
+    margin-left: 30%;
+}
+.lastline 
+{
+    font-size: 14px;
+    margin-top: 50px;
+    color: #ffffff;
+    float: left;
+}
+.lastline ul
+{
+    list-style-type:none;
+   
+}
+.lastline li{
+    display: inline;
+    margin-left: 20px;
+    color: #ffffff;
+}
+.lastline a
+{
+    text-decoration: none;
+}
+.lastline span
+{
+color: #979797;
+font-size: 15px;
+}
+.socialicons
+{
+    
+    margin: 50px 100px;
+}
+.socialicons img 
+{
+    margin-left: 20px;
+}
